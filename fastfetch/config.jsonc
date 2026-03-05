@@ -1,0 +1,86 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+    // FETCH LOGO
+    "logo": {
+        "type": "kitty-direct",
+        "source": "~/.config/fastfetch/icon.png",
+        "width": 24,
+        "padding": {
+            "top": 1
+        }
+    },
+
+    // FETCH DISPLAY
+    "display": {
+        "separator": " ",
+        "size": {
+            "binaryPrefix": "jedec"
+        },
+        "color": {
+            "keys": "cyan",
+            "title": "magenta",
+            "output": "cyan"
+        }
+    },
+
+    // FETCH MODULES
+    "modules": [
+        {
+            "type": "title"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "key": "╭───────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#35}{icon} UPTIME  {#keys}│",
+            "type": "uptime"
+        },
+        {
+            "key": "│ {#35}{icon} OS      {#keys}│",
+            "type": "os",
+            "format": "{name} {version}"
+        },
+        {
+            "key": "│ {#35}{icon} CPU     {#keys}│",
+            "type": "cpu",
+            "format": "{name}"
+        },
+        {
+            "key": "│ {#35}{icon} PACKAGES{#keys}│",
+            "type": "packages"
+        },
+        {
+            "key": "│ {#35}{icon} GPU     {#keys}│",
+            "type": "gpu",
+            "format": "{name}",
+            "hideType": "integrated"
+        },
+        {
+            "key": "│ {#35}{icon} DISK    {#keys}│",
+            "type": "disk",
+            "folders": "/",
+            "format": "{size-used} / {size-total} ({size-percentage})"
+        },
+        {
+            "key": "│ {#35}{icon} MEMORY  {#keys}│",
+            "type": "memory",
+            "format": "{used} / {total} ({percentage})"
+        },
+        {
+            "key": "╰───────────╯",
+            "type": "custom"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}
