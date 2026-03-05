@@ -2,13 +2,10 @@
     "base-color": "#1E1E2E",
     "element-color": "#181825",
     "dark-element-color": "#11111B",
-
     "text-color": "#A6ADC8",
     "bright-text-color": "#CDD6F4",
-
     "lavender-color": "#B4BEFE",
     "mauve-color": "#CBA6F7",
-
     "red-color": "#F38BA8",
     "yellow-color": "#F9E2AF",
     "green-color": "#A6E3A1"
