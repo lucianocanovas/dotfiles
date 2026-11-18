@@ -1,0 +1,3 @@
+# Local user profile & runtime settings (keep personal info out of git)
+config/user.json
+config/settings.json

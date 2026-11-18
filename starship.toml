@@ -1,0 +1,103 @@
+# Configuración de Starship alineada a ~/.config/SYSTEM_THEME_GUIDE.md
+add_newline = true
+
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$c$cpp$golang$java$lua$nodejs$php$python$ruby$rust$zig\
+$line_break\
+$character"""
+
+[os]
+disabled = false
+style = "fg:#f4f4f5"
+format = "[$symbol]($style)"
+
+[os.symbols]
+Arch = "󰣇 "
+
+[username]
+show_always = true
+style_user = "fg:#f4f4f5"
+style_root = "fg:#f87171 bold"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "fg:#a1a1aa"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "fg:#f4f4f5 bold"
+truncation_length = 4
+truncation_symbol = "…/"
+format = "[ · ](fg:#71717a)[$path]($style)"
+
+[git_branch]
+symbol = " "
+style = "fg:#4ade80"
+format = "[ · ](fg:#71717a)[$symbol$branch]($style)"
+
+[character]
+success_symbol = "[❯](fg:#f4f4f5)"
+error_symbol = "[❯](fg:#f87171)"
+vimcmd_symbol = "[❮](fg:#facc15)"
+
+# --- Lenguajes ---
+[c]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[cpp]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[golang]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[java]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[lua]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[nodejs]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[php]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[python]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[ruby]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[rust]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"
+
+[zig]
+symbol = " "
+style = "fg:#f4f4f5"
+format = "[ · ](fg:#71717a)[$symbol$version]($style)"

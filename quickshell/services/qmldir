@@ -1,0 +1,4 @@
+singleton WeatherService 1.0 WeatherService.qml
+singleton BrightnessService 1.0 BrightnessService.qml
+singleton NotificationService 1.0 NotificationService.qml
+singleton SystemService 1.0 SystemService.qml
